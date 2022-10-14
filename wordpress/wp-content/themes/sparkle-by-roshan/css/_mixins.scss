@@ -1,0 +1,14 @@
+
+// This mixin helps to use the display flex with ease. You just need one line of code for using flex now
+@mixin flex(
+	$justify:space-between,
+	$align : center,
+	$direction: row,
+	$flex: wrap
+) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-wrap: $flex;
+	flex-direction: $direction;
+}
